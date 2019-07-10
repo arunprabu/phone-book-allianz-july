@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   //ts 
-  title = 'phone-book';
+  title = 'Phone Book App v 1.0.1';
 }

@@ -5,10 +5,21 @@ import { Component, OnInit } from '@angular/core';
   template: `
   <footer class="text-center">
     <hr>
-    <p>Copyright &copy; 2019</p>
+    <app-nav>
+      <li class="nav-item">
+          <a class="nav-link" href="#">Back to top</a>
+      </li>
+    </app-nav>
+    <p class="dull">Copyright &copy; 2019</p>
   </footer>
   `,
-  styles: []
+  styles: [
+    `
+    .dull{
+      color: grey;
+    }
+    `
+  ]
 })
 export class FooterComponent implements OnInit {
 
