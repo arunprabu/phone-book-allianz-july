@@ -1,0 +1,46 @@
+1. Data Binding
+    1. String Interpolation
+        TS => HTML 
+        {{}}
+    2. Property Binding 
+        TS => HTML
+        [ ]
+        built in properties are 
+            value, href, src, 
+            routerLinkActiveOptions, ngClass, ngStyle 
+    3. Event Binding 
+        TS => HTML 
+        () 
+        click, mouseover, drag
+    4. Two Way Binding 
+        [(ngModel)]
+        TS <=> HTML 
+    5. Custom Property Binding 
+        Parent => Child Comp communication
+
+    6. Custom Event Binding 
+        Child => Parent Component communication
+
+
+Expression - { }
+
+
+
+
+
+
+
+
+2. Directives 
+3. Contact Manager 
+    Create a contact 
+    List all Contacts 
+    Show one contact  details 
+    update contact 
+    delete contact 
+4. Forms 
+5. Services 
+6. RxJs/ Observables 
+7. Pipes 
+8. Feature Modules 
+9. Unit Testing 

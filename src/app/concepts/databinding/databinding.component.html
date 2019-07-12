@@ -1,0 +1,34 @@
+<div>
+  <h1>String Interpolation</h1>
+  <p>App Name is {{ appName }}</p>
+  <p>Is Logged In? {{ isLoggedIn }}</p>
+  <p>App being built by a dev with exp {{ developersExp }}</p>
+  <p>App built on {{ skillsList[3] }}</p>
+  <br>
+  <br>
+  <input type="text" value="{{appName}}">
+
+  <br>
+  <p>Getting Developers Exp... </p>
+  <p>{{ getExp() }} years</p>
+
+  <h1>Property Binding</h1>
+  <input type="text" [value]="featureName">
+  <p class="blue">Text appears in blue</p>
+  <p [ngClass]="{ blue: true }">Text appears in blue</p>
+  <p [ngClass]="{ blue: isAuthenticated(), 
+    red: !isAuthenticated() }">Showing in red/blue based on authenticated status</p>
+
+
+  <h1>Event Binding</h1>
+  <button onclick="onBtnClick()">Click me - will not work</button>
+  <br>
+  <br>
+  <button (click)="onBtnClick($event)">Click me</button>
+
+
+  <h1>Two way binding</h1>
+  <input type="text" [(ngModel)]="featureName">
+  <p>{{ featureName }}</p>
+
+</div>

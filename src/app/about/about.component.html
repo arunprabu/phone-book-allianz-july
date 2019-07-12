@@ -1,3 +1,23 @@
-<p>
-  about works!
-</p>
+<div>
+  <h1>Pipes</h1>
+
+  <p>{{birthday}}</p>
+  <p>{{birthday | date }}</p>
+  <p>{{birthday | date: 'dd-MMMM-yyyy, hh:mm:ss a' }}</p>
+
+  <hr>
+  <h2>Custom Pipe</h2>
+  <p>ng g p shared/pipes/ellipsis</p>
+
+  <p>{{placeHolderText}}</p>
+  <hr>
+  <p>{{placeHolderText | ellipsis }}</p>
+  <p>{{placeHolderText | ellipsis: '120' }}</p>
+
+  <hr>
+  <p>Name: {{profileName}}</p>
+  Enter New Name <input type="text" [(ngModel)]="newName"> <br><br>
+  <button type="button" (click)="updateNameHandler()">Update Name</button>
+
+
+</div>

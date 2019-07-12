@@ -1,0 +1,26 @@
+src/
+    app/
+        ..
+        ..
+        ..
+        ..
+        ..
+        shared/
+        footer/
+        header/
+        nav/
+        concepts/
+            databinding/
+            ceb/
+            cpb/
+        contacts/
+        about/
+        get-in-touch/
+        auth/
+            signin/
+            signup/
+            reset-pw/
+        dashboard/
+        reports/
+
+

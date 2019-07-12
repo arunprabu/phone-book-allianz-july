@@ -1,0 +1,10 @@
+Directives
+====
+Special instruction for the DOM
+1. Attribute Directives 
+    routerLink, ngClass
+
+2. Structural Directives 
+    *ngIf,
+    *ngFor 
+    ngSwitch 

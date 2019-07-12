@@ -1,0 +1,48 @@
+Step 1: Add the links and set up paths in nav.component.html
+    <a href="/">Home</a></li>
+    <a href="/concepts">Concepts</a>
+    <a href="/contacts">Contacts</a>
+    <a href="/about">About</a>
+
+ng g c concepts -is 
+ng g c contacts -is 
+ng g c about -is
+ng g c get-in-touch -is  
+
+Step2: Let's have the routes configured in app-routing.module.ts 
+
+const routes: Routes = [
+  { path: '', component: ConceptsComponent },
+  { path: 'concepts', component: ConceptsComponent },
+  { path: 'contacts', component: ContactsComponent },
+  { path: 'about', component: AboutComponent }
+];
+
+
+Step3:  in app-routing.module.ts 
+imports: [RouterModule.forRoot(routes)],  // Step 3: register the routes 
+
+Step4: add <router-outlet></router-outlet> in app.component.html 
+
+Step5: Check the app. The page will still reload. LEt's fix
+in nav.component.html 
+  change href to routerLink 
+
+
+Step6: 
+let's have active class. have routerLinkActive in li in nav.component.html 
+<li routerLinkActive="active" ...>
+
+
+
+
+
+Step7: Now, when you see the navigation menu, 
+active class will be added in another link also. 
+Let's fix it. add routerLinkActiveOptions in first li alone.
+
+<ul class="nav navbar-nav">
+    <li routerLinkActive="active" 
+      [routerLinkActiveOptions]="{exact: true}"><a routerLink="/">Home</a></li>
+    <li routerLinkActive="active"><a routerLink="/concepts">Concepts</a></li>
+</ul>
