@@ -1,10 +1,13 @@
 Directives
-====
-Special instruction for the DOM
-1. Attribute Directives 
-    routerLink, ngClass
+----
+Special instructions for the DOM
 
-2. Structural Directives 
-    *ngIf,
-    *ngFor 
-    ngSwitch 
+1. Attribute Directives 
+    routerLink, routerLinkActiveOptions, 
+2. Structural Directives
+    Impacts the structure of the webpage ... 
+
+3. Custom Attribute Directives 
+  ng g d directives/colorizr 
+
+
